@@ -60,8 +60,21 @@ los registros de productos.
 
 ## Compilación y ejecución
 
-Desde una terminal ubicada en la carpeta del proyecto, compilar los
-archivos fuente con el siguiente comando desde la terminal:
+Para ejecutar el programa desde GitHub Codespaces, siga los siguientes pasos:
+
+1. Ingrese al repositorio del proyecto en GitHub.
+2. Seleccione la opción **Code** y, posteriormente, acceda a **Codespaces** para abrir el entorno de desarrollo.
+3. Espere a que se carguen los archivos del proyecto y se inicie el entorno.
+4. Abra la terminal integrada y ejecute el siguiente comando para iniciar la aplicación:
+
+```bash
+java -cp ".:sqlite-jdbc-3.41.2.2.jar" Main
+```
+
+Una vez ejecutado el comando, se mostrará en la terminal el menú principal de gestión de productos, desde el cual podrá registrar, consultar, buscar, actualizar y eliminar productos, o finalizar la ejecución.
+
+**Nota:** El comando utiliza el controlador JDBC de SQLite incluido en el repositorio para establecer la conexión con la base de datos. Si necesita compilar nuevamente el proyecto antes de ejecutarlo, utilice:
 
 ```bash
 javac Main.java BaseDatos.java
+```
