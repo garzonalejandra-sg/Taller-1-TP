@@ -91,7 +91,7 @@ public class Main {
     // UPDATE 
 
     static void actualizar() {
-        String codigo = leer("Código  o nombredel producto a actualizar: ");
+        String codigo = leer("Código del producto a actualizar: ");
         double precio = leerPrecio("Nuevo precio: ");
 
         String sql = "UPDATE productos SET precio = ? WHERE codigo = ?";
